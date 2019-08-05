@@ -14,10 +14,20 @@ $(document).ready(() => {
   $(window).scroll(() => {
     let sc = $(window).scrollTop();
     console.log(sc);
-     if (sc > 100) {
+     if (sc > 85) {
        $('.nav').addClass('nav--sticked');
-     } else {
+     } else if (sc === 0) {
        $('.nav').removeClass('nav--sticked');
      }
+  })
+
+  $('.bxslider').bxSlider({
+    mode: 'horizontal',
+    moveSlides: 1,
+    slideMargin: 40,
+    infiniteLoop: true,
+    minSlides: 1,
+    maxSlides: 1,
+    speed: 1200,
   })
 })
