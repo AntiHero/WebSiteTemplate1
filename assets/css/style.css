@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:400,500,600,700|Roboto+Condensed:400,700&display=swap");
+:root {
+  --containerWidth: 100vw;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -50,6 +54,7 @@ body {
     opacity: 1;
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
+    -o-transform: translate3d(0, -100%, 0);
   }
   to {
     opacity: 1;
@@ -64,6 +69,7 @@ body {
     opacity: 1;
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
+    -o-transform: translate3d(0, -100%, 0);
   }
   to {
     opacity: 1;
@@ -426,7 +432,7 @@ body {
 .video-container {
   position: absolute;
   top: 30vh;
-  width: 100%;
+  width: var(--containerWidth);
   padding: 0 10px 0 10%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -491,7 +497,7 @@ body {
 }
 
 .main {
-  margin-top: 82px;
+  padding-top: 82px;
 }
 
 .main-section-slider {
@@ -508,6 +514,7 @@ body {
 
 .main-section-slider__item {
   width: 100vw;
+  position: relative;
 }
 
 .slider-control-wrapper {
@@ -552,10 +559,6 @@ body {
 
 .slider-control__item:hover {
   opacity: 1;
-}
-
-.main-section-slider__item.main-section-slider__item--active {
-  display: block;
 }
 
 @-webkit-keyframes shadow-pulse {
