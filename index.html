@@ -14,6 +14,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
       crossorigin="anonymous"
     >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="assets/css/jquery.bxslider.css">
     <title>Document</title>
   </head>
@@ -45,30 +46,34 @@
     </header>
     <main class="main">
       <section class="main-section">
-        <ul class="bxslider">
-          <li class="bxslider-item">
-            <div class="bg-video">
-              <video 
-                class="video" 
-                playsinline
-                autobuffer
-                autoplay
-                muted
-                loop
-              >
-                <source src='./assets/videos/video1.mp4'>
-              </video>
+        <ul class="main-section-slider">
+          <li class="main-section-slider__item ">
+            <video 
+              class="video" 
+              playsinline
+              autobuffer
+              autoplay
+              muted
+              loop
+            >
+              <source src='./assets/videos/video1.mp4'>
+            </video>
               <div class="video-container">
                 <div class="video-container-content">
                   <h1 class="video-container-content__heading text-left">
-                    Welcome to Spart
+                    Welcome to Spart1
                   </h1>
                   <p class="video-container-content__text text-left">
-                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae rerum blanditiis quam libero. Incidunt amet dolor repudiandae doloribus consequuntur alias, labore reiciendis omnis a, odit laboriosam ratione voluptates dolorem ut.
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae rerum blanditiis quam libero. Incidunt amet dolor repudiandae doloribus consequuntur alias, labore reiciendis omnis a, odit laboriosam ratione voluptates dolorem ut.
                   </p>
-                  <a href="" class="video-container-content__button">
-                    Click here
-                  </a>
+                    <a href="" class="video-container-content__button">
+                      Click here
+                    </a>
+                    <ul class="slider-control">
+                      <li class="slider-control__item"></li>
+                      <li class="slider-control__item"></li>
+                      <li class="slider-control__item"></li>
+                    </ul>
                 </div>
                 <ul class="social-icons social-icons--main list-inline">
                   <li class="social-icons__item">
@@ -88,32 +93,29 @@
                   </li>
                 </ul>
               </div>
-            </div>
           </li>
-          <!-- <li class="bxslider-item">
-            <div class="bg-video">
-              <video 
-                class="video" 
-                playsinline
-                autobuffer
-                autoplay
-                muted
-                loop
-              >
-                <source src=''>
-              </video>
-              <div class="video-container">
-                <div class="video-container-content">
-                  <h1 class="video-container-content__heading text-left">
-                    Welcome to Spart
-                  </h1>
-                  <p class="video-container-content__text text-left">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae rerum blanditiis quam libero. Incidunt amet dolor repudiandae doloribus consequuntur alias, labore reiciendis omnis a, odit laboriosam ratione voluptates dolorem ut.
-                  </p>
-                  <a href="" class="video-container-content__button">
-                    Click here
-                  </a>
-                </div>
+          <li class="main-section-slider__item main-section-slider__item--active">
+            <video 
+              class="video" 
+              playsinline
+              autobuffer
+              autoplay
+              muted
+              loop
+            >
+              <source src='./assets/videos/video2.mp4'>
+            </video>
+            <div class="video-container">
+              <div class="video-container-content">
+                <h1 class="video-container-content__heading text-left">
+                  Welcome to Spart2
+                </h1>
+                <p class="video-container-content__text text-left">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae rerum blanditiis quam libero. Incidunt amet dolor repudiandae doloribus consequuntur alias, labore reiciendis omnis a, odit laboriosam ratione voluptates dolorem ut.
+                </p>
+                <a href="" class="video-container-content__button">
+                  Click here
+                </a>
               </div>
               <ul class="social-icons social-icons--main list-inline">
                 <li class="social-icons__item">
@@ -134,30 +136,28 @@
               </ul>
             </div>
           </li>
-          <li class="bxslider-item">
-            <div class="bg-video">
-              <video 
-                class="video" 
-                playsinline
-                autobuffer
-                autoplay
-                muted
-                loop
-              >
-                <source src=''>
-              </video>
-              <div class="video-container">
-                <div class="video-container-content">
-                  <h1 class="video-container-content__heading text-left">
-                    Welcome to Spart
-                  </h1>
-                  <p class="video-container-content__text text-left">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae rerum blanditiis quam libero. Incidunt amet dolor repudiandae doloribus consequuntur alias, labore reiciendis omnis a, odit laboriosam ratione voluptates dolorem ut.
-                  </p>
-                  <a href="" class="video-container-content__button">
-                    Click here
-                  </a>
-                </div>
+          <li class="main-section-slider__item">
+            <video 
+              class="video" 
+              playsinline
+              autobuffer
+              autoplay
+              muted
+              loop
+            >
+              <source src='./assets/videos/video3.mp4'>
+            </video>
+            <div class="video-container">
+              <div class="video-container-content">
+                <h1 class="video-container-content__heading text-left">
+                  Welcome to Spart3
+                </h1>
+                <p class="video-container-content__text text-left">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae rerum blanditiis quam libero. Incidunt amet dolor repudiandae doloribus consequuntur alias, labore reiciendis omnis a, odit laboriosam ratione voluptates dolorem ut.
+                </p>
+                <a href="" class="video-container-content__button">
+                  Click here
+                </a>
               </div>
               <ul class="social-icons social-icons--main list-inline">
                 <li class="social-icons__item">
@@ -177,7 +177,7 @@
                 </li>
               </ul>
             </div>
-          </li> -->
+          </li>
         </ul>
       </section>
     </main>
@@ -223,13 +223,13 @@
         </a>
       </div>
     </div>
-    <script 
-      src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js">
-    </script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.js"
       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
       crossorigin="anonymous">
+    </script>
+    <script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js">
     </script>
     <script src="assets/js/index.js"></script>
   </body>

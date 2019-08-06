@@ -21,13 +21,13 @@ $(document).ready(() => {
      }
   })
 
-  $('.bxslider').bxSlider({
-    mode: 'horizontal',
-    moveSlides: 1,
-    slideMargin: 40,
-    infiniteLoop: true,
-    minSlides: 1,
-    maxSlides: 1,
-    speed: 1200,
-  })
+  // $('.bxslider').bxSlider({
+  //   mode: 'horizontal',
+  //   moveSlides: 1,
+  //   slideMargin: 40,
+  //   infiniteLoop: true,
+  //   minSlides: 1,
+  //   maxSlides: 1,
+  //   speed: 1200,
+  // })
 })
