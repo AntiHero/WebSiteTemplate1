@@ -2,6 +2,7 @@
 
 :root {
   --containerWidth: 100vw;
+  --containerHeight: 800px;
 }
 
 html {
@@ -9,7 +10,6 @@ html {
   font-size: 16px;
   margin: 0;
   padding: 0;
-  //overflow-x: hidden;
 }
 
 body {
@@ -18,8 +18,6 @@ body {
 
 .header {
   width: 100%;
-  //position: fixed;
-  //overflow: hidden;
 }
 
 .nav {
@@ -424,7 +422,10 @@ body {
 
 .main-section-slider__item {
   width: 100vw;
+  min-width: 100vw;
   position: relative;
+  height: var(--containerHeight);
+  overflow-y: hidden;
 }
 
 .slider-control-wrapper {
@@ -473,6 +474,15 @@ body {
   text-decoration: none; 
   color: #fdfdfd;
   background: transparent;
+}
+
+.about-item {
+  opacity: 0;
+  transition: opacity 1.5s;
+}
+
+.about-item.about-item--visible {
+  opacity: 1;
 }
 
 .responsive-menu {

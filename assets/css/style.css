@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:400,500,600,700|Roboto+Condensed:400,700&display=swap");
 :root {
   --containerWidth: 100vw;
+  --containerHeight: 800px;
 }
 
 html {
@@ -514,7 +515,10 @@ body {
 
 .main-section-slider__item {
   width: 100vw;
+  min-width: 100vw;
   position: relative;
+  height: var(--containerHeight);
+  overflow-y: hidden;
 }
 
 .slider-control-wrapper {
@@ -587,6 +591,16 @@ body {
   text-decoration: none;
   color: #fdfdfd;
   background: transparent;
+}
+
+.about-item {
+  opacity: 0;
+  -webkit-transition: opacity 1.5s;
+  transition: opacity 1.5s;
+}
+
+.about-item.about-item--visible {
+  opacity: 1;
 }
 
 .responsive-menu {

@@ -1,6 +1,15 @@
 console.log('hello');
 
+$(window).on('beforeunload', function(){
+  $(window).scrollTop(0);
+});
+
 $(document).ready(() => {
+  $(this).scrollTop(0);
+  
+  document.documentElement.style
+    .setProperty('--containerHeight', `${document.documentElement.clientHeight}px` );
+
   $('.nav-icon').click(() => {
     $('.full-nav-wrapper').addClass('open-nav');
     $('body').css('overflow', 'hidden');
@@ -18,8 +27,24 @@ $(document).ready(() => {
      } else if (sc === 0) {
        $('.nav').removeClass('nav--sticked');
      }
-  })
 
+    const hT = $('.about-item').offset().top;
+    const items = document.querySelectorAll('.about-item');
+    let delay = 0;
+
+    for (let i = 0; i < items.length; i++) {
+      $(items[i]).css('transition-delay', `${delay}s`);
+      delay += .5;
+    }
+    console.log(items)
+    const wH = $(window).height();
+    const wS = $(this).scrollTop();
+    
+    if (wS > (hT - wH)){
+      $('.about-item').addClass('about-item--visible');
+    }
+  })
+  
   const slider = document.querySelector('.main-section-slider');
   const controls = document.querySelectorAll('.slider-control');
   let currentSlide = 0;
