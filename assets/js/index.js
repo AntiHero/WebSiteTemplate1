@@ -1,5 +1,3 @@
-console.log('hello');
-
 $(window).on('beforeunload', function(){
   $(window).scrollTop(0);
 });
@@ -36,7 +34,6 @@ $(document).ready(() => {
       $(items[i]).css('transition-delay', `${delay}s`);
       delay += .5;
     }
-    console.log(items)
     const wH = $(window).height();
     const wS = $(this).scrollTop();
     
